@@ -1,0 +1,31 @@
+{
+  "name": "git-utils",
+  "version": "1.0.0",
+  "description": "Util methods to work with DOM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack && npm run min",
+    "min": "uglifyjs ./js/utils.js -o ./dist/utils.es6.js --compress --mangle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsjscss/utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wsjscss/utils/issues"
+  },
+  "homepage": "https://github.com/wsjscss/utils#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5",
+    "uglify-es": "^3.3.9",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {}
+}
