@@ -679,7 +679,6 @@
             el.classList.remove('slide-open')
             el.style.display = 'block'
             el.style.maxHeight = `${el.scrollHeight}px`
-            let css = window.getComputedStyle(el).maxHeight
             el.style.maxHeight = '0px'
             el.addEventListener('transitionend', this.clearStylesHandler, {
                 once: true
